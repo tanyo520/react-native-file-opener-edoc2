@@ -1,4 +1,4 @@
-react-native-file-opener
+react-native-file-opener-edoc2
 -
 A React Native module that allows you to open a file (mp3, mp4, pdf, word, excel, dwg etc.) on your device with its default application
 
@@ -15,7 +15,7 @@ iOS | Android
 5. Compile and have fun
 
 ##Android
-* `npm install react-native-file-opener --save`
+* `npm install react-native-file-opener-edoc2 --save`
 ```java
 // file: android/settings.gradle
 ...
