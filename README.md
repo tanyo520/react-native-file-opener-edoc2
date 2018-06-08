@@ -4,13 +4,13 @@ A React Native module that allows you to open a file (mp3, mp4, pdf, word, excel
 
 iOS | Android
 ------- | ----
-<img title="iOS" src="https://github.com/huangzuizui/react-native-file-opener/blob/master/assets/ios_screen.gif"> | <img title="Android" src="https://raw.githubusercontent.com/huangzuizui/react-native-file-opener/master/assets/android_screen.gif">
+<img title="iOS" src="https://github.com/tanyo520/react-native-file-opener-edoc2/blob/master/assets/ios_screen.gif"> | <img title="Android" src="https://raw.githubusercontent.com/tanyo520/react-native-file-opener-edoc2/master/assets/android_screen.gif">
 
 # Install
 ##iOS
-1. `npm install react-native-file-opener --save`
+1. `npm install react-native-file-opener-edoc2 --save`
 2. in the XCode's "Project navigator", right click on your project's `Libraries` folder ➜ `Add Files to`
-3. Go to `node_modules` ➜ `react-native-file-opener` ➜ `ios` ➜ select `RNFileOpener.xcodeproj`
+3. Go to `node_modules` ➜ `react-native-file-opener-edoc2` ➜ `ios` ➜ select `RNFileOpener.xcodeproj`
 4. Add `libRNFileOpener.a` to `Build Phases -> Link Binary With Libraries`
 5. Compile and have fun
 
@@ -19,8 +19,8 @@ iOS | Android
 ```java
 // file: android/settings.gradle
 ...
-include ':react-native-file-opener'
-project(':react-native-file-opener').projectDir = new File(settingsDir, '../node_modules/react-native-file-opener/android')
+include ':react-native-file-opener-edoc2'
+project(':react-native-file-opener-edoc2').projectDir = new File(settingsDir, '../node_modules/react-native-file-opener-edoc2/android')
 ```
 
 ```java
@@ -28,7 +28,7 @@ project(':react-native-file-opener').projectDir = new File(settingsDir, '../node
 ...
 dependencies {
 		...
-		compile project(':react-native-file-opener')
+		compile project(':react-native-file-opener-edoc2')
 }
 ```
 * register module
@@ -132,5 +132,3 @@ const sampleDocFilePath = SavePath + '/sample.doc';
     
 ...
 ```
-##Demo project
-[https://github.com/huangzuizui/react-native-file-opener-demo](https://github.com/huangzuizui/react-native-file-opener-demo)
