@@ -560,8 +560,9 @@ public class FileOpener extends ReactContextBaseJavaModule {
                 Intent intent = new Intent();
                 Uri tempUri;
                 if(Build.VERSION.SDK_INT>=24) { //判读版本是否在7.0以上
+                    String name = this._context.getPackageName();
                     //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
-                    tempUri =FileProvider.getUriForFile(getReactApplicationContext(), "com.edoc2"+".provider", file);
+                    tempUri =FileProvider.getUriForFile(getReactApplicationContext(),name+".provider", file);
 //添加这一句表示对目标应用临时授权该Uri所代表的文件
                 }else{
 
